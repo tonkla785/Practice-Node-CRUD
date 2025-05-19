@@ -1,12 +1,12 @@
 /* สิ่งที่อยู่ตรงนี้ จะมีไว้แค่ให้ dev อ่าน */
 /* 1. แต่งใคร ? (id, class, DOM) 2. แต่งอะไร ? */
 @font-face {
-  font-family: 'kanit';
-  src: url('./Kanit/Kanit-Regular.ttf');
+  font-family: "kanit";
+  src: url("./Kanit/Kanit-Regular.ttf");
 }
 
 body {
-  font-family: 'kanit';
+  font-family: "kanit";
 }
 
 .container {
@@ -40,7 +40,8 @@ body {
   text-align: center;
 }
 
-input.form, textarea {
+input.form,
+textarea {
   border: 1px gainsboro solid;
   width: 100%;
 }
@@ -49,8 +50,25 @@ input.form, textarea {
   border: 0;
   width: 50%;
   height: 40px;
-  background-color: #2962FF;
+  background-color: #2962ff;
   color: white;
+}
+
+.message {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.message.success {
+  background-color: lightgreen;
+  display: block;
+}
+
+.message.danger {
+  background-color: lightcoral;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
